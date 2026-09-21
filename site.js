@@ -23,16 +23,21 @@
   local.href = base + "latex-mode.css?v=20260816e";
 
   function isOn() {
-    return sessionStorage.getItem(KEY) === "1";
+    var val = sessionStorage.getItem(KEY);
+    if (val === null) return true; // Default to Clean Academic / LaTeX mode
+    return val === "1";
   }
 
   // shareable link: ?latex / ?latex=1 forces LaTeX mode on load.
   // ?latex=0 forces it off. persists to sessionStorage so in-site nav keeps it.
   (function () {
     var m = /[?&]latex(?:=([^&]*))?/.exec(location.search);
-    if (!m) return;
-    var on = !(m[1] === "0" || m[1] === "false");
-    sessionStorage.setItem(KEY, on ? "1" : "0");
+    if (m) {
+      var on = !(m[1] === "0" || m[1] === "false");
+      sessionStorage.setItem(KEY, on ? "1" : "0");
+    } else if (sessionStorage.getItem(KEY) === null) {
+      sessionStorage.setItem(KEY, "1");
+    }
   })();
 
   function apply(on) {
