@@ -353,7 +353,7 @@ true? The transition model made that a bounded symbolic-execution problem.
 If you want more background on symbolic execution, I have written about it in
 another reverse-engineering post:
 
-- [Slay the JIT: From Hotpatches to Symbolic Couture in Miasm](https://mooofin.github.io/portfolio/blog/vmware.html?latex=1)
+- [Slay the JIT: From Hotpatches to Symbolic Couture in Miasm](https://mechanic.github.io/portfolio/blog/vmware.html?latex=1)
 
 If the reversing and radare UI9yes it looks very messy at times) is not your taste, here's my explanation 
 Concrete execution uses a real input first. Symbolic execution uses a

@@ -8,11 +8,11 @@
 <title>Dynamic Analysis of VEH Dispatch and Exception-Context RIP Modification Using ROP Gadgets in ntdll.dll</title>
 <meta property="og:title" content="Dynamic Analysis of VEH Dispatch and Exception-Context RIP Modification Using ROP Gadgets in ntdll.dll" />
 <meta property="og:description" content="Reverse engineering ntdll's VEH dispatch chain, RtlDispatchException, and RtlRestoreContext to understand VEHguard internals." />
-<meta property="og:image" content="https://mooofin.github.io/portfolio/blog/vehguard/image6.png" />
-<meta property="og:url" content="https://mooofin.github.io/portfolio/blog/vehguard.html" />
+<meta property="og:image" content="https://mechanic.github.io/portfolio/blog/vehguard/image6.png" />
+<meta property="og:url" content="https://mechanic.github.io/portfolio/blog/vehguard.html" />
 <meta property="og:type" content="article" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://mooofin.github.io/portfolio/blog/vehguard/image6.png" />
+<meta name="twitter:image" content="https://mechanic.github.io/portfolio/blog/vehguard/image6.png" />
 <link href="../style.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css" rel="stylesheet"/>
 <link href="../public/favicon.ico" rel="icon"/>
@@ -363,7 +363,7 @@ Symbol ntdll!_EXCEPTION_POINTERS not found.
 
 <p>In x64dbg, pause at the handler, step over the writes to <code>ctx-&gt;Rsp</code> and <code>ctx-&gt;Rip</code>, then inspect the call stack, which now returns through the <code>ntdll.dll</code> ROP gadget.
 
-<p><strong>Source code:</strong> <a href="https://github.com/mooofin/VEHguard" rel="nofollow noreferrer noopener" target="_blank">VEHguard on GitHub</a>.</p>
+<p><strong>Source code:</strong> <a href="https://github.com/mechanic/VEHguard" rel="nofollow noreferrer noopener" target="_blank">VEHguard on GitHub</a>.</p>
 
 
 

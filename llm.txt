@@ -1,4 +1,4 @@
-# mooofin's Homepage
+# mechanic's Homepage
 
 > Blog posts on systems programming, compilers, reverse engineering, and digital forensics by sid.
 

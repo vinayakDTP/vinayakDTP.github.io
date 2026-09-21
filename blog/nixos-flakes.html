@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Provenance and Purity: Nix programming language & Fixed-Output Flakes" />
-    <title>Provenance and Purity: Nix programming language & Fixed-Output Flakes - mooofin</title>
+    <title>Provenance and Purity: Nix programming language & Fixed-Output Flakes - mechanic</title>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css" />
     <link rel="icon" href="../public/favicon.ico" />
@@ -440,7 +440,7 @@ When building Rust applications, especially for production or cross-platform dis
 <strong>Nix Flakes Solution:</strong>
 </p>
 <p>
-With the <a href="https://github.com/mooofin/Rustflakes">Rustflakes</a> approach, you get a much cleaner solution. One <code>flake.nix</code> file becomes your single source of truth, declaring the Rust version, all system dependencies, and build targets in one place. Builds are hermetic-they don't rely on whatever happens to be installed on your host system. Cross-compilation becomes trivial: just add a target to <code>flake.nix</code> and run <code>nix build .#windows</code> or <code>.#aarch64</code>. You even get Docker images for free, generated directly from Nix derivations. Since dependencies are vendored in <code>vendor/</code>, builds work offline without network access.
+With the <a href="https://github.com/mechanic/Rustflakes">Rustflakes</a> approach, you get a much cleaner solution. One <code>flake.nix</code> file becomes your single source of truth, declaring the Rust version, all system dependencies, and build targets in one place. Builds are hermetic-they don't rely on whatever happens to be installed on your host system. Cross-compilation becomes trivial: just add a target to <code>flake.nix</code> and run <code>nix build .#windows</code> or <code>.#aarch64</code>. You even get Docker images for free, generated directly from Nix derivations. Since dependencies are vendored in <code>vendor/</code>, builds work offline without network access.
 </p>
 <p>
 This makes Rustflakes particularly valuable for teams needing consistent builds across developer machines and CI, projects targeting multiple platforms like Linux, Windows, and ARM, embedded or IoT applications requiring specific toolchain versions, and security-conscious environments requiring reproducible builds.

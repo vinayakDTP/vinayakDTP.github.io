@@ -239,7 +239,7 @@
       var meta = document.querySelector(".blog-meta");
       var d = document.createElement("div");
       d.className = "latex-author";
-      d.appendChild(document.createTextNode("mooofin"));
+      d.appendChild(document.createTextNode("mechanic"));
       d.appendChild(document.createElement("br"));
       var affil = document.createElement("span");
       affil.className = "affil";
@@ -357,9 +357,9 @@
       var card = document.createElement("span");
       card.className = "latex-bibcard";
       card.textContent =
-        "@misc{mooofin2026" + keyword + ",\n" +
+        "@misc{mechanic2026" + keyword + ",\n" +
         '  title  = {' + title + '},\n' +
-        "  author = {mooofin and others},\n" +
+        "  author = {mechanic and others},\n" +
         "  year   = {2026},\n" +
         (url ? '  url    = {' + url + '},\n' : "") +
         '  note   = {accessed: while procrastinating}\n' +
@@ -408,11 +408,7 @@
       var isContact = location.pathname.endsWith("contact.html");
       var socials = isIndex ? [
         { label: "Email", href: "mailto:siddharthqln@gmail.com" },
-        { label: "GitHub", href: "https://github.com/mooofin" }
-      ] : isContact ? [
-        { label: "Last.fm", href: "https://www.last.fm/user/kxllswxch" },
-        { label: "MyAnimeList", href: "https://myanimelist.net/profile/kurapika_99" },
-        { label: "Letterboxd", href: "https://letterboxd.com/ptolemeaa4u/" }
+        { label: "GitHub", href: "https://github.com/vinayakDTP" }
       ] : [];
       var socialDiv = document.createElement("div");
       if (socials.length) {
@@ -460,8 +456,8 @@
       "(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls",
       "Document Class: article 2023/05/17 v1.4n Standard LaTeX document class",
       "(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))",
-      "(./mooofin.sty",
-      "Package: mooofin 2026/07/13 v1.0 personal site macros",
+      "(./mechanic.sty",
+      "Package: mechanic 2026/07/13 v1.0 personal site macros",
       ")",
       "(./win95-compat.sty",
       "Package: win95-compat 1995/08/24 v4.00.950 backwards compatibility layer",
@@ -543,7 +539,7 @@
       "LaTeX2e <2023-11-01>",
       "(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls",
       "Document Class: article 2023/05/17 v1.4n Standard LaTeX document class)",
-      "(./mooofin.sty) (./win95-compat.sty",
+      "(./mechanic.sty) (./win95-compat.sty",
       "Package win95-compat Warning: GIFs are not allowed in this mode.",
       ")",
       "No file " + page + ".aux.",

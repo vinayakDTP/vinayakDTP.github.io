@@ -9,7 +9,7 @@ This repository contains two intentionally different site representations on unr
 
 Do not assume that `main` and `gh-pages` can be merged normally: they have no common ancestor. Before editing, confirm the target branch and follow that branch's layout and toolchain.
 
-The remote is `https://github.com/mooofin/portfolio`.
+The remote is `https://github.com/mechanic/portfolio`.
 
 ## Branch workflows
 

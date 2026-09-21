@@ -124,7 +124,7 @@ def main():
         '<?xml version="1.0" encoding="utf-8"?>',
         '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">',
         '  <channel>',
-        f'    <title>mooofin\'s Blog</title>',
+        f'    <title>mechanic\'s Blog</title>',
         f'    <link>{BASE_URL}</link>',
         f'    <description>Blog posts on systems programming, compilers, reverse engineering, and digital forensics by sid.</description>',
         '    <language>en-us</language>',
@@ -154,7 +154,7 @@ def main():
 
     # Generate llm.txt
     llm_lines = [
-        '# mooofin\'s Homepage',
+        '# mechanic\'s Homepage',
         '',
         '> Blog posts on systems programming, compilers, reverse engineering, and digital forensics by sid.',
         '',
