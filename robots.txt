@@ -3,6 +3,6 @@ Allow: /
 
 # LLM Crawler context file
 # See llm.txt for developer/AI agent context on this site.
-# https://mooofin.github.io/portfolio/llm.txt
+# https://vinayakdtp.github.io/llm.txt
 
-Sitemap: https://mooofin.github.io/portfolio/feed.xml
+Sitemap: https://vinayakdtp.github.io/feed.xml
