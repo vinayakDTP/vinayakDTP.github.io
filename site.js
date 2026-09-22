@@ -407,7 +407,7 @@
       var isIndex = location.pathname === "/" || location.pathname.endsWith("/portfolio/") || location.pathname.endsWith("index.html");
       var isContact = location.pathname.endsWith("contact.html");
       var socials = isIndex ? [
-        { label: "Email", href: "mailto:siddharthqln@gmail.com" },
+        { label: "Email", href: "mailto:socialaccounts999@protonmail.com" },
         { label: "GitHub", href: "https://github.com/vinayakDTP" }
       ] : [];
       var socialDiv = document.createElement("div");
